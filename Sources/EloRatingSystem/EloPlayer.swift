@@ -1,5 +1,4 @@
 import Foundation
-import Vapor
 
 public enum GameResult: Int {
     case lost = 0
@@ -54,5 +53,3 @@ public final class EloPlayer: Codable {
         try container.encode(id, forKey: .id)
     }
 }
-
-extension EloPlayer: Content {}
